@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ETH balance</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.8.2/dist/web3.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input {
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .loading {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ETH Balance</h1>
+    <input type="text" id="ethAddress" placeholder="Enter ETH Address">
+    <button id="checkBalance">Enter</button>
+    <div class="result" id="result"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
